@@ -1,0 +1,69 @@
+<lasso-page package-path="./browser.json" />
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>${data.route.title}</title>
+
+    <lasso-head/>
+</head>
+
+<body class="list">
+    <!--
+	Debug class on <body> enables
+	cyan grid on slides
+	-->
+    <header class="caption">
+        <h1>${data.route.title}</h1>
+        <p>Header</p>
+    </header>
+
+    <section class="slide">
+        <h2>${data.route.title}</h2>
+        <div>
+            <lasso-img src="src/assets/duck-on-a-rock.jpg" width="615" height="412" class="presentation-photo" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Slide 2</h2>
+        <div>
+            <app-markdown>
+            This slide uses **markdown** via the `app-markdown` tag.
+            </app-markdown>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Code Highlighting</h2>
+        <div style="font-size: 65%;">
+            <app-markdown>
+            This slide uses **markdown** as well as syntax highlighting.
+
+            ```javascript
+            console.log('Hello, World!');
+            ```
+            </app-markdown>
+
+            <app-markdown>
+            You can also create code blocks using the `app-code-block` tag.
+            </app-markdown>
+
+            <app-code-block lang="html">
+                <div class="demo">Demo</div>
+            </app-code-block>
+        </div>
+    </section>
+
+    <div class="progress"><div></div></div>
+
+    <lasso-body/>
+    <init-widgets />
+    <browser-refresh enabled="true" />
+</body>
+
+</html>
