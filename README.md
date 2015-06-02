@@ -7,7 +7,7 @@ It also provides conveniences for rendering your presentation
 slides with **markdown** snippets.
 
 The [Marko Template Engine](https://github.com/raptorjs/marko)
-to render your presentation slides.
+is used to render your presentation slides.
 
 [Lasso](https://github.com/lasso-js/lasso) is used as the
 build and deployment tool.
