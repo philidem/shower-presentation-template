@@ -37,7 +37,7 @@ build and deployment tool.
 node server.js
 ```
 
-Open your web browser to `http://localhost:8888/presentation/`
+Open your web browser to `http://localhost:8888/`
 
 ## Build & Deploy
 

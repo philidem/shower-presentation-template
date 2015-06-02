@@ -10,7 +10,7 @@ module.exports = require('lasso-tools')
                 // IFRAME page for webchat
                 {
                     template: require.resolve('presentation/index.marko'),
-                    path: '/presentation/',
+                    path: '/',
                     title: 'Presentation Template Using Shower'
                 }
             ]
